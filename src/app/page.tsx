@@ -13,7 +13,8 @@ const frameMetadata = getFrameMetadata({
     {
       label: "Learn How to Build your Own Checkout",
       action: "link",
-      target: "https://www.crossmint.com/collections/dynamic-nft-frame-46/drop",
+      target:
+        "https://blog.crossmint.com/how-to-build-an-nft-checkout-with-degen-token/?utm_source=rohit&utm_medium=warpcaste&utm_campaign=degen",
     },
   ],
   image: {
