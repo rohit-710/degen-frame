@@ -6,36 +6,28 @@ const NEXT_PUBLIC_URL = process.env.NEXT_PUBLIC_URL;
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: "Mint",
-      action: "post",
+      label: "Mint with $DEGEN",
+      action: "link",
+      target: "https://headless-checkout-theta.vercel.app",
     },
     {
-      label: "Credit Card Mint",
+      label: "Learn How to Build your Own Checkout",
       action: "link",
       target: "https://www.crossmint.com/collections/dynamic-nft-frame-46/drop",
-    },
-    {
-      label: "Update NFT",
-      action: "post",
-      target: `${NEXT_PUBLIC_URL}/api/frame/dynamic`,
     },
   ],
   image: {
     src: `${NEXT_PUBLIC_URL}/default.png`,
     aspectRatio: "1.91:1",
   },
-  input: {
-    text: "Enter your Email Address",
-  },
-  postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
 });
 
 export const metadata: Metadata = {
-  title: "Mint an NFT on Base",
-  description: "Mint an NFT on Base",
+  title: "Mint an NFT on Base with $DEGEN",
+  description: "Mint an NFT on Base with $DEGEN",
   openGraph: {
-    title: "Mint an NFT on Base",
-    description: "Powered by Crossmint and Base",
+    title: "Mint an NFT on Base with $DEGEN",
+    description: "Powered by Crossmint's Headless Checkout",
     images: [`${NEXT_PUBLIC_URL}/default.png`],
   },
   other: {
@@ -46,7 +38,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>Mint an NFT on Base</h1>
+      <h1>Mint an NFT on Base with $DEGEN</h1>
     </>
   );
 }
